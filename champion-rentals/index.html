@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Champion Rentals | Construction &amp; Landscaping Equipment Rentals</title>
+  <meta name="description" content="Champion Rentals rents construction equipment, landscaping equipment and tools. Excavators, loaders, lifts, concrete tools, saws, generators and more. Open Monday–Friday 8am–4pm. Call 508-325-4700 or email championrentals@live.com.">
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Champion Rentals home">
+        <img src="assets/logo.jpg" alt="Champion Rentals logo" width="800" height="575">
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#equipment">Equipment</a>
+        <a href="#about">About</a>
+        <a href="#hours">Hours &amp; Contact</a>
+      </nav>
+      <a class="btn btn-primary header-call" href="tel:+15083254700">Call 508-325-4700</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Tool &amp; Equipment Rentals</p>
+          <h1>The right equipment for the job, <span>ready when you are.</span></h1>
+          <p class="lead">Champion Rentals keeps contractors, landscapers and homeowners working with a deep lineup of construction equipment, landscaping machines and the tools that go with them.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+15083254700">Call to Reserve</a>
+            <a class="btn btn-outline" href="#equipment">Browse Equipment</a>
+          </div>
+          <p class="open-status" id="open-status" aria-live="polite"></p>
+        </div>
+        <div class="hero-card">
+          <h2>Shop Hours</h2>
+          <ul class="hours-list">
+            <li><span>Monday – Friday</span><strong>8:00 am – 4:00 pm</strong></li>
+            <li><span>Saturday</span><strong>Closed</strong></li>
+            <li><span>Sunday</span><strong>Closed</strong></li>
+          </ul>
+          <a class="phone-big" href="tel:+15083254700">508-325-4700</a>
+          <a class="email-link" href="mailto:championrentals@live.com">championrentals@live.com</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights">
+      <div class="container highlight-grid">
+        <div class="highlight">
+          <h3>Heavy Equipment</h3>
+          <p>Mini excavators, track loaders, wheel loaders, telehandlers and skid steer attachments.</p>
+        </div>
+        <div class="highlight">
+          <h3>Aerial Lifts</h3>
+          <p>Electric scissor lifts and articulating man lifts reaching up to 80 feet.</p>
+        </div>
+        <div class="highlight">
+          <h3>Concrete &amp; Demo</h3>
+          <p>Mixers, vibrators, core drills, breakers, demo saws and compaction equipment.</p>
+        </div>
+        <div class="highlight">
+          <h3>Landscaping</h3>
+          <p>Stump grinders, chippers, brush mowers, tillers, augers, trimmers and more.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipment" class="equipment">
+      <div class="container">
+        <div class="section-head">
+          <h2>Our Equipment</h2>
+          <p>Here's what we carry. Availability changes daily, so call ahead to reserve and get current rates.</p>
+        </div>
+
+        <div class="catalog-controls">
+          <label class="search">
+            <span class="visually-hidden">Search equipment</span>
+            <input type="search" id="search" placeholder="Search equipment, e.g. excavator, generator, tiller…" autocomplete="off">
+          </label>
+          <div class="filters" role="group" aria-label="Filter equipment">
+            <button type="button" class="chip is-active" data-filter="all">All</button>
+            <button type="button" class="chip" data-filter="construction">Construction</button>
+            <button type="button" class="chip" data-filter="landscaping">Landscaping</button>
+            <button type="button" class="chip" data-filter="other">Party &amp; Storage</button>
+          </div>
+        </div>
+
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+        <div class="catalog" id="catalog"></div>
+        <p class="no-results" id="no-results" hidden>Don't see what you need? Give us a call at <a href="tel:+15083254700">508-325-4700</a> — we may be able to help.</p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container about-inner">
+        <div>
+          <h2>Why Champion Rentals</h2>
+          <p>Whether you're digging a foundation, pouring a slab, clearing a lot or finishing a weekend project, we've got the equipment and know-how to get it done. Our staff will help you pick the right machine and show you how to use it safely.</p>
+        </div>
+        <ul class="checklist">
+          <li>Construction and landscaping equipment under one roof</li>
+          <li>Well-maintained, job-ready machines</li>
+          <li>Delivery available for larger equipment</li>
+          <li>Friendly, knowledgeable staff</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="hours" class="contact">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <h2>Hours</h2>
+          <ul class="hours-list">
+            <li><span>Monday – Friday</span><strong>8:00 am – 4:00 pm</strong></li>
+            <li><span>Saturday</span><strong>Closed</strong></li>
+            <li><span>Sunday</span><strong>Closed</strong></li>
+          </ul>
+          <p class="note">Holiday hours may vary — call ahead.</p>
+        </div>
+        <div class="contact-card">
+          <h2>Contact Us</h2>
+          <p>Reserve equipment, check availability or ask about rates.</p>
+          <a class="phone-big" href="tel:+15083254700">508-325-4700</a>
+          <a class="email-link" href="mailto:championrentals@live.com">championrentals@live.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>Champion Rentals</strong> · Construction &amp; Landscaping Equipment Rentals</p>
+      <p><a href="tel:+15083254700">508-325-4700</a> · <a href="mailto:championrentals@live.com">championrentals@live.com</a> · Mon–Fri 8am–4pm</p>
+      <p class="copyright">&copy; <span id="year"></span> Champion Rentals</p>
+    </div>
+  </footer>
+
+  <script src="inventory.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
