@@ -177,6 +177,55 @@ a { color: var(--navy); }
 .highlight h3 { font-size: 1.25rem; margin-bottom: 0.3em; color: var(--navy-dark); }
 .highlight p { margin: 0; }
 
+/* Featured machines */
+.featured { padding: 72px 0; }
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+.machine {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(11, 21, 134, 0.08);
+}
+.machine-photo {
+  margin: 0;
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: var(--bg-soft);
+}
+.machine-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.machine-photo figcaption { display: none; }
+/* Shown only if the photo file is missing */
+.machine-photo.no-photo {
+  display: grid;
+  place-items: center;
+  background:
+    repeating-linear-gradient(135deg, rgba(255,255,255,0.04) 0 14px, transparent 14px 28px),
+    var(--navy);
+}
+.machine-photo.no-photo img { display: none; }
+.machine-photo.no-photo figcaption {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--orange);
+  text-transform: uppercase;
+}
+.machine-body { padding: 22px 24px 26px; border-top: 5px solid var(--orange); }
+.machine-body h3 { font-size: 1.45rem; color: var(--navy); }
+.machine-body p { color: var(--muted); margin: 0 0 10px; }
+.machine-body .machine-delivery { color: var(--orange-dark); font-weight: 600; margin: 0; }
+
 /* Equipment catalog */
 .equipment { padding: 72px 0; background: var(--bg-soft); }
 .section-head { text-align: center; margin-bottom: 32px; }
@@ -377,6 +426,6 @@ a { color: var(--navy); }
   .brand img { height: 54px; }
   .header-call { padding: 0.6em 0.9em; font-size: 0.9rem; }
   .hero { padding: 48px 0; }
-  .highlight-grid, .contact-grid, .delivery-grid { grid-template-columns: 1fr; }
+  .highlight-grid, .contact-grid, .delivery-grid, .featured-grid { grid-template-columns: 1fr; }
   .phone-big { font-size: 1.7rem; }
 }

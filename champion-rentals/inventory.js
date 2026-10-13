@@ -6,9 +6,11 @@ window.INVENTORY = [
     category: "Earthmoving & Heavy Equipment",
     group: "construction",
     items: [
+      "Case CX37C Mini Excavator",
       "Case CX57 Mini Excavator",
       "Case Large Excavator",
       "Case 221 Wheel Loader",
+      "Case TV450 Skid Steer",
       "Case TR340B Compact Track Loader",
       "Case TR270 Compact Track Loader",
       "Compact Utility Loader (Dingo)",
